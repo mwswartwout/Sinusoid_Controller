@@ -1,0 +1,3 @@
+My system was able to follow about a frequency of 4. Much higher than that and it wouldn't always hit the max and min that it should have, and at about 6 it just became an essentially flat line.
+Kv in the controller updates the gain, appears to make larger changes the higher the gain is (and thus is more jagged) and smaller changes with a lower gain (smoother curves)
+dt in the simulator increases the number of integration steps, makes curves smoother and more accurate but uses more cpu
