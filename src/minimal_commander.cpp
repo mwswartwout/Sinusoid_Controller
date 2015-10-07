@@ -8,12 +8,13 @@ int main(int argc, char **argv) {
     ros::Publisher command_publisher = n.advertise<std_msgs::Float64>("vel_cmd", 1); // publish to vel_cmd topic
     ros::Rate naptime(10); // update @ 10hz
 
-    double amplitude = 1; // amplitude value for sine wave
-    double frequency = 4; // frequency value for sine wave
     double pi = 3.14159; // value of pi
     double t = 0; // current time in calculation
     double dt = 0.1; // timestep for calculation
     double sine; // sine output
+    double amplitude1 = 1; // amplitude value for sine 
+    double frequency1 = 1; // frequency value for sine
+ 
     std_msgs::Float64 output; // message wrapper for sine output
 
     while (ros::ok()) {
