@@ -12,8 +12,8 @@ int main(int argc, char **argv) {
     double t = 0; // current time in calculation
     double dt = 0.1; // timestep for calculation
     double sine; // sine output
-    double amplitude1 = 1; // amplitude value for sine 
-    double frequency1 = 1; // frequency value for sine
+    double amplitude = 1; // amplitude value for sine 
+    double frequency = 1; // frequency value for sine
  
     std_msgs::Float64 output; // message wrapper for sine output
 
